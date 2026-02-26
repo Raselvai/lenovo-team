@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url('../webfonts/ProductSans-Regular.eot');
+    src: url('../webfonts/ProductSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/ProductSans-Regular.woff2') format('woff2'),
+        url('../webfonts/ProductSans-Regular.woff') format('woff'),
+        url('../webfonts/ProductSans-Regular.ttf') format('truetype'),
+        url('../webfonts/ProductSans-Regular.svg#ProductSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans Bold';
+    src: url('../webfonts/ProductSans-Bold.eot');
+    src: url('../webfonts/ProductSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/ProductSans-Bold.woff2') format('woff2'),
+        url('../webfonts/ProductSans-Bold.woff') format('woff'),
+        url('../webfonts/ProductSans-Bold.ttf') format('truetype'),
+        url('../webfonts/ProductSans-Bold.svg#ProductSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+  font-family: 'Product Sans Regular';
+}
+
+.container {
+	max-width: 1230px !important;
+}
+
+.lenovo_wrapper {
+	padding: 80px 0;
+}
+
+.lenovo_wrapper h2 {
+    font-family: 'Product Sans Bold';
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.lenovo_wrapper h2 span {
+	  color: #E2232A;
+}
+
+.lenovo_wrapper .lenovo_item {
+	  margin-top: 30px;
+	  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	  background: #ffffff;
+	  border-radius: 8px;
+	  overflow: hidden;
+}
+
+.lenovo_wrapper .lenovo_item figure {
+	  width: 100%;
+	  height: 100%;
+	  overflow: hidden;
+	  position: relative;
+}
+
+.lenovo_wrapper .lenovo_item figure img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: 0.4s all ease-in-out;
+}
+
+.lenovo_wrapper .lenovo_item:hover figure img {
+	  transform: scale(1.10);
+}
+
+.lenovo_wrapper .lenovo_item figure ul {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    list-style: none;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.lenovo_wrapper .lenovo_item:hover figure ul {
+	  right: 20px;
+	  visibility: visible;
+	  opacity: 1;
+}
+
+.lenovo_wrapper .lenovo_item figure ul li a {
+    background: #E2232A;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    margin: 6px 0;
+    text-decoration: none;
+    transition: 0.4s all ease-in-out;
+}
+
+.lenovo_wrapper .lenovo_item figure ul li a:hover {
+	  background: #31af36;
+}
+
+.lenovo_wrapper .lenovo_item .lenovo_content {
+    padding: 30px;
+    text-align: center;
+}
+
+.lenovo_wrapper .lenovo_item .lenovo_content h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.lenovo_wrapper .lenovo_item .lenovo_content h3 a {
+		color: #000000;
+		transition: 0.4s all ease-in-out;
+}
+
+.lenovo_wrapper .lenovo_item .lenovo_content h3 a:hover {
+	  text-decoration: none;
+	  color: #E2232A;
+}
+
+.lenovo_wrapper .lenovo_item .lenovo_content p {
+    color: #E2232A;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
